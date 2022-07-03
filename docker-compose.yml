@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+      args:
+        username: ktsn-ht
+        reponame: atcoder
+    image: atcoder-cli
+    container_name: atcoder-cli
+    tty: true
